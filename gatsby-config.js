@@ -7,7 +7,7 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Minimal Blog`,
+    siteTitle: `Daco's Blog`,
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
     siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
@@ -33,8 +33,8 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `GitHub`,
+            url: `hhttps://github.com/Daco2020`,
           },
           {
             name: `Homepage`,
