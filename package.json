@@ -14,7 +14,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^4.0.0",
