@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exes and Ohs · 김은찬</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="/favicon.ico">
+</head>
+<body>
+<main>
+<a class="back" href="../">&larr; 김은찬</a>
+<article>
+<h1>Exes and Ohs</h1>
+<p class="sub">2022.02.24 · JavaScript · 알고리즘</p>
+<h2>Description</h2>
+<p>Check to see if a string has the same amount of <code>x</code>s and <code>o</code>s. The method must return a boolean and be case insensitive. The string can contain any char.  Examples input/output: </p>
+<pre><code>XO(&quot;ooxx&quot;) =&gt; true
+XO(&quot;xooxx&quot;) =&gt; false
+XO(&quot;ooxXm&quot;) =&gt; true
+XO(&quot;zpzpzpp&quot;) =&gt; true // when no &#x27;x&#x27; and &#x27;o&#x27; is present should return true
+XO(&quot;zzoo&quot;) =&gt; false</code></pre>
+<h2>Solution</h2>
+<p>1. Check if <code>str</code> contains <code>o</code> and <code>x</code> respectively. 2. If included, assign it to the <code>o</code> and <code>x</code> variables. 3. Returns the result by checking whether the variables <code>o</code> and <code>x</code> are equal.</p>
+<pre><code>function XO(str) {
+  let o = 0 
+  let x = 0
+
+  for (const i of str) {
+    if ([&#x27;o&#x27;,&#x27;O&#x27;].includes(i)){
+      o += 1
+    }
+    if ([&#x27;x&#x27;,&#x27;X&#x27;].includes(i)){
+      x += 1
+    }
+  }
+  return o == x
+}</code></pre>
+</article>
+<footer><span>위유즈 · 김은찬</span><span><a href="mailto:dacokim32@gmail.com">dacokim32@gmail.com</a></span></footer>
+</main>
+</body>
+</html>
